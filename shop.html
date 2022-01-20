@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<!--[if lt IE 9]> <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+	<meta charset="utf-8" />
+
+	<!-- Viewport Tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+
+    <title>HEROES DISC GOLF</title>
+    <meta property="og:site_name" content="HEROES DISC GOLF">
+    <meta property="og:title" content="HEROES DISC GOLF">
+    <link rel="icon" href="images/logo_nolocation.jpeg" type="image/gif" sizes="32x32">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/slicknav.css">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+	</script> <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+			$(document).ready(function(){
+			$ ( '#nav_menu'). slicknav( {prependTo: "#mobile_menu"});
+		}); 
+    </script>
+    
+<style>
+*{
+margin: 0;
+padding: 0;
+}
+
+hr {
+border: 0;
+height: 1px;
+background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(218, 223, 225, 1), rgba(0, 0, 0, 0));
+}
+
+body {
+font-family: sans-serif;
+font-size: 100%;
+max-width: 100%;
+width: 100%;
+margin: 0 auto;
+background-color: white;
+font-family: 'Trebuchet MS', sans-serif;
+}
+
+.sidebar {
+width: 20%;
+margin-left: 2.5em;
+float: left;
+}
+
+.homesection {
+float: right;
+width: 70%;
+margin-left: 2em;
+}
+
+.mainwidth h1 {
+padding-top: 20px;
+font-family: sans-serif;
+padding-bottom: 15px;
+font-size: 150%;
+}
+.sidebar h3 {
+padding-top: 1.25em;
+font-family: sans-serif;
+font-size: 150%;
+}
+
+.gradient-text {
+background: rgb(39,39,39);
+/* Create the gradient. */
+
+background: linear-gradient(to right, red, blue, red, blue);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+
+.sidebar p {
+font-size: 80%;
+}
+
+.sidebar a:hover {
+font-weight: bold;
+}
+
+.mainwidth h2 {
+font-size: 110%;
+}
+
+.shoplist {
+float: right;
+padding-right: 41em;
+font-size: 110%;
+}
+
+.tournamentlist {
+float: right;
+padding-right: 37.5em;
+font-size: 110%;
+padding-bottom: 25px;
+}
+
+.advertisinglist {
+float: right;
+padding-right: 39em;
+font-size: 110%;
+}
+
+li {
+padding-bottom: 8px;
+}
+
+main p {
+width: 100%;
+float: right;
+font-size: 115%;
+padding-top: 40px;
+}
+
+main h1 {
+font-size: 160%;
+color: #B8B8B8;
+padding-right: none;
+}
+
+main h2 {
+width: 100%;
+float: right;
+font-size: 115%;
+padding-bottom: 10px;
+padding-top: 20px;
+}
+
+.text1 {
+float: right;
+padding-right: 150px;
+}
+
+.text2 {
+float: right;
+padding-right: 150px;
+padding-bottom: 70px;
+}
+
+.sidebar p {
+padding-bottom: 80px;
+}
+
+
+/* header style */
+header {
+background-size: 1440px 600px;
+background-color: black;
+font-variant: sans-serif;
+}
+
+.bordertop {
+border-bottom: 1px solid lightgrey;
+padding-bottom: 200px;
+width: 100%;
+position: relative;
+}
+
+header img{
+height: 38em;
+width: 100%;
+}
+
+header h1 {
+text-align: left;
+}
+
+
+/* header style end */
+
+footer {
+clear: both;
+height: 300px;
+font-size: 80%;
+color: white;
+text-align: center;
+background-color:#333;
+}
+
+footer p {
+text-align: center;
+padding-top: 20px;
+font-size: 80%;
+font-variant: small-caps;
+padding-bottom: 50px;
+}
+
+footer img {
+padding-top: 40px;
+width: 235px;
+height: 160px;
+}
+
+footer .edge {
+padding-top: 40px;
+width: 160px;
+height: 160px;
+}
+
+/* new menu */
+.topnav {
+overflow: hidden;
+background: linear-gradient(to right, red, white,blue);
+position: fixed;
+width: 100%;
+border: 2px solid black;
+}
+
+.topnav .events {
+background-color: #282828;
+}
+
+.topnav .teetimes {
+background-color: #303030;
+}
+
+.topnav .faqs {
+background-color: #383838;
+}
+
+.topnav .dropdown {
+background-color: #404040;
+}
+
+.topnav #myLinks {
+display: none;
+}
+
+.topnav a {
+color: white;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+display: block;
+}
+
+.topnav a.icon {
+background: black;
+display: block;
+position: absolute;
+right: 0;
+top: 0;
+}
+
+.topnav a:hover {
+background-color: lightgrey;
+opacity: 75%;
+color: black;
+font-weight: bold;
+}
+
+.active {
+color: white;
+}
+
+/* nav menu */
+#nav_menu {
+position: relative;
+}
+
+#nav_menu ::after pseudo-element {
+clear: both;
+display: block;
+}
+
+#nav_menu ul {
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+
+#nav_menu ul li {
+float: left;
+}
+
+#nav_menu ul li a {
+display: block;
+width: 165.02px;
+text-align: center;
+padding-top: 1em;
+padding-bottom: 1em;
+text-decoration: none;
+background-color: #333;
+color: white;
+font-weight: bold;
+}
+
+/* end of nav menu */
+
+
+/* sub menu */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropbtn a:hover {
+color: white;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+padding-top: 10px;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+font-style: italic;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown {
+display: block;
+padding-bottom: 3px;
+text-decoration: none;
+background-color: #333;
+color: white;
+float: left;
+width: 100%;
+}
+
+#mobile_menu { 
+display: none; 
+background-color: #333;
+}
+
+
+@media only screen and (max-width: 1215px) {
+
+.shoplist {
+padding-right: 60%;
+}
+
+.advertisinglist {
+padding-right: 50%;
+width: 100%;
+}
+
+.tournamentlist {
+padding-right: 50%;
+width: 100%;
+}
+
+header img {
+float: none;
+display: block;
+margin: 0 auto;
+max-width: 100%;
+}
+}
+
+@media only screen and (max-width: 955px) {
+
+.shoplist {
+padding-left: 15%;
+width: 110%;
+margin: auto;
+}
+
+.advertisinglist {
+width: 110%;
+margin: auto;
+}
+
+.tournamentlist {
+width: 110%;
+margin: auto;
+}
+
+header img {
+width: 95%;
+height: 50%;
+margin: auto;
+}
+}
+
+@media only screen and (max-width: 870px) {
+
+.homesection {
+width: 100%;
+}
+
+.mainwidth {
+width: 100%;
+}
+
+.shoplist {
+padding-right: 50%;
+width: 95%;
+margin: auto;
+}
+
+.advertisinglist {
+width: 95%;
+margin: auto;
+}
+
+.tournamentlist {
+width: 95%;
+margin: auto;
+}
+
+.sidebar {
+width: 95%;
+margin: auto;
+text-align: center;
+}
+
+.text1 {
+width: 95%;
+margin: auto;
+}
+
+.homesection {
+padding-left: 35px;
+}
+
+header img {
+width: 95%;
+height: 65%;
+margin: auto;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+.homesection {
+width: 100%;
+}
+
+.mainwidth {
+width: 100%;
+}
+
+.shoplist {
+padding-right: .1em;
+padding-left: 2em;
+margin-left: none !important;
+}
+
+.text1 {
+width: 95%;
+margin: auto;
+}
+
+.sidebar {
+padding-left: 1em;
+text-align: center;
+}
+
+header img {
+width: 100%;
+margin: auto;
+}
+}
+</style>
+
+</head>
+
+<body>
+
+    <header>
+
+		<!-- Simulate a smartphone / tablet -->
+	<div class="mobile-container">
+
+		<!-- Top Navigation Menu -->
+		<div class="topnav">
+		  <a href="homepage.html" class="current">Home</a>
+		  <div id="myLinks">
+			<div class="events">
+				<a href="events.html">Events</a>
+			</div>
+			<div class="teetimes">
+				<a href="teetimes.html">Tee Times</a>
+			</div>
+			<div class="faqs">
+				<a href="faqs.html">FAQS</a>
+			</div>
+					<!-- <div class="dropdown">
+						<a class="dropbtn">About Us</a>
+							<div class="dropdown-content">
+								<ul>
+									<li><a href="our_history.html">Our History</a></li>
+									<li><a href="board_of_directors.html">Board of Directors</a></li>
+									<li><a href="past_speakers.html">Past Speakers</a></li>
+									<li><a href="contact_information.html">Contact Information</a></li>
+								</ul>
+							</div>
+					</div> -->
+			</div>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+	
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myLinks");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+		</script>
+
+	<img src="images/sunset.jpeg">
+
+	</header>
+
+    <main>
+
+		<hr>
+        
+    
+	<div class="homesection">
+		<div class="mainwidth">
+		
+			<h1>THE SHOP</h1>
+			
+			<h2>Apparel and merchandise coming soon...</h2>
+				
+			<div class="shoplist">
+				<ul>
+					<li>T-Shirts</li>
+					<li>Long Sleeve Shirts</li>
+					<li>Custom Discs</li>
+					<li>All on the way!</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+		<aside class="sidebar">
+            <div>
+                <h3 class="gradient-text"><a href="cost.html">COST</a></h3>
+                <p>The course is currently private but free to play with permisson.</p>
+            </div>
+            <div>
+                <hr>
+                <h3 class="gradient-text"><a href="shop.html">SHOP</a></h3>
+                <p>Apparel is limited to members only. Stay tuned for more news!</p>
+            </div>
+            <div>
+                <hr>
+                <h3 class="gradient-text"><a href="loops.html">LOOPS</a></h3>
+                <p>Three current configurations of varying difficulty. From the Reds, designed to create fun for beginners and families, to the Blue, which challenges high caliber players.</p>
+            </div>
+            <hr>
+            <div>
+                <h3 class="gradient-text"><a href="membership.html">MEMBERSHIP</a></h3>
+                <p>Please contact us at 860-372-8903 for further information in regard to a membership at HDGC.</p>
+                <hr>
+            </div>
+    </aside>
+
+  
+    </main>
+
+
+    <footer>
+
+      <p>
+        <a href="https://respecthergame.org/">
+          <img src="images/respecthergame.jpeg">
+        </a>
+        <a href="https://edgediscgolf.org/">
+          <img class="edge" src="images/edge.png">
+        </a>
+          <br>
+          <br>
+          <br>
+          <br>
+        &copy;TCormier Productions 2021
+      </p>
+
+
+    </footer>
+
+</body>
+
+</html>

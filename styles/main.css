@@ -1,0 +1,432 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+hr {
+border: 0;
+height: 1px;
+background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(218, 223, 225, 1), rgba(0, 0, 0, 0));
+}
+
+body {
+font-family: sans-serif;
+font-size: 100%;
+max-width: 100%;
+width: 100%;
+margin: 0 auto;
+background-color: white;
+font-family: 'Trebuchet MS', sans-serif;
+}
+
+.sidebar {
+width: 20%;
+margin-left: 2.5em;
+float: left;
+}
+
+.homesection {
+float: right;
+width: 70%;
+margin-left: 2em;
+}
+
+.mainwidth h1 {
+padding-top: 1.25em;
+font-family: sans-serif;
+padding-bottom: .93em;
+font-size: 150%;
+}
+
+.sidebar h3 {
+padding-top: 1.25em;
+font-family: sans-serif;
+font-size: 150%;
+}
+
+.sidebar a:hover {
+font-weight: bold;
+}
+
+.gradient-text {
+background: rgb(39,39,39);
+/* Create the gradient. */
+
+background: linear-gradient(to right, red, blue, red, blue);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+
+.sidebar p {
+font-size: 80%;
+}
+
+.mainwidth h2 {
+font-size: 110%;
+}
+
+.mainlist {
+float: right;
+padding-right: 26em;
+font-size: 110%;
+}
+
+.courselist {
+float: right;
+padding-right: 10em;
+padding-left: 5em;
+font-size: 110%;
+padding-bottom: 1.56em;
+}
+
+li {
+padding-bottom: .5em;
+}
+
+main p {
+width: 100%;
+float: right;
+font-size: 115%;
+padding-top: 2.5em;
+}
+
+main h1 {
+font-size: 160%;
+color: #B8B8B8;
+padding-right: none;
+}
+
+main h2 {
+width: 100%;
+float: right;
+font-size: 115%;
+padding-bottom: .62em;
+padding-top: 1.25em;
+}
+
+.text1 {
+float: right;
+padding-right: 9.38em;
+}
+
+.text2 {
+float: right;
+padding-right: 9.38em;
+padding-bottom: 4.38em;
+}
+
+.sidebar p {
+padding-bottom: 5em;
+}
+
+
+/* header style */
+
+header {
+font-variant: sans-serif;
+}
+
+header img{
+height: 38em;
+width: 100%;
+}
+
+header h1 {
+text-align: left;
+}
+
+
+/* header style end */
+
+footer {
+clear: both;
+height: 22em;
+font-size: 80%;
+color: white;
+text-align: center;
+background-color:#333;
+}
+
+footer p {
+text-align: center;
+padding-top: 1.25em;
+font-size: 80%;
+font-variant: small-caps;
+padding-bottom: 3.125em;
+}
+
+footer img {
+padding-top: 40px;
+width: 235px;
+height: 160px;
+}
+
+footer .edge {
+padding-top: 40px;
+width: 160px;
+height: 160px;
+}
+
+/* new menu */
+.topnav {
+overflow: hidden;
+background: linear-gradient(to right, red, white,blue);
+position: fixed;
+width: 100%;
+border: 2px solid black;
+}
+
+.topnav .events {
+background-color: #282828;
+}
+
+.topnav .teetimes {
+background-color: #303030;
+}
+
+.topnav .faqs {
+background-color: #383838;
+}
+
+.topnav .dropdown {
+background-color: #404040;
+}
+
+.topnav #myLinks {
+display: none;
+}
+
+.topnav a {
+color: white;
+padding: .875em 1em;
+text-decoration: none;
+font-size: .95em;
+display: block;
+}
+
+.topnav a.icon {
+background: black;
+display: block;
+position: absolute;
+right: 0;
+top: 0;
+}
+
+.topnav a.icon a:hover {
+    display: block;
+}
+
+.topnav a:hover {
+background-color: lightgrey;
+opacity: 75%;
+color: black;
+font-weight: bold;
+}
+
+.active {
+color: white;
+}
+
+/* NAV MENU 'X' SWITCH */
+
+
+
+/* nav menu */
+#nav_menu {
+position: relative;
+}
+
+#nav_menu ::after pseudo-element {
+clear: both;
+display: block;
+}
+
+#nav_menu ul {
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+
+#nav_menu ul li {
+float: left;
+}
+
+#nav_menu ul li a {
+display: block;
+width: 10.31375em;
+text-align: center;
+padding-top: 1em;
+padding-bottom: 1em;
+text-decoration: none;
+background-color: #333;
+color: white;
+font-weight: bold;
+}
+
+/* end of nav menu */
+
+
+/* sub menu */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropbtn a:hover {
+color: white;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+padding-top: .625em;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+font-style: italic;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown {
+display: block;
+padding-bottom: 3px;
+text-decoration: none;
+background-color: #333;
+color: white;
+float: left;
+width: 100%;
+}
+
+#mobile_menu { 
+display: none; 
+background-color: #333;
+}
+
+@media only screen and (max-width: 1215px) {
+
+.mainlist {
+padding-right: 13.75em;
+}
+
+header img {
+float: none;
+display: block;
+margin: 0 auto;
+max-width: 100%;
+}
+}
+
+@media only screen and (max-width: 955px) {
+
+.mainlist {
+padding-right: 3.75em;
+}
+header img {
+width: 100%;
+height: 65%;
+margin: auto;
+}
+}
+
+@media only screen and (max-width: 870px) {
+
+.courselist {
+margin-top: 1em;
+}
+
+main h1 {
+text-align: center;
+}
+
+header img {
+width: 95%;
+height:65%;
+margin: auto;
+}
+
+.mainlist {
+width: 95%;
+margin: auto;
+}
+
+.text1 {
+width: 95%;
+margin: auto;
+}
+
+.text2 {
+    padding-right: 2em;
+    text-align: center;
+}
+
+.sidebar {
+width: 95%;
+margin: auto;
+text-align: center;
+}
+
+header img {
+width: 100%;
+margin: auto;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+.courselist {
+padding-right: .8em;
+padding-left: 2.5em;
+margin-left: none !important;
+}
+
+main h1 {
+text-align: center;
+}
+
+header img {
+width: 95%;
+height:65%;
+margin: auto;
+}
+
+.homesection {
+width: 100% !important;
+}
+
+.mainwidth {
+width: 100% !important;
+}
+
+.mainwidth h2 {
+padding-left: 1.5em;
+}
+
+.mainlist {
+padding-right: 1em;
+padding-left: 3em;
+}
+
+.text1 {
+padding-right: 1em;
+}
+
+.text2 {
+padding-right: .5em;
+padding-left: .5em;
+text-align: center;
+}
+
+.sidebar {
+padding-left: 1em;
+text-align: center;
+}
+
+header img {
+width: 100%;
+margin: auto;
+}
+}
